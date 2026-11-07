@@ -1,0 +1,33 @@
+{
+  "task": "blazerail_matrix",
+  "run_dir": "opencode\\blazerail-verification\\runs\\20261108-012923\\matrix",
+  "tested_models": 17,
+  "counts": {
+    "basic": {
+      "ok": 17,
+      "fail": 0,
+      "rate_limited": 0,
+      "timeout": 0
+    },
+    "tool": {
+      "ok": 15,
+      "fail": 0,
+      "rate_limited": 2,
+      "timeout": 0
+    },
+    "stream": {
+      "ok": 11,
+      "fail": 6,
+      "rate_limited": 0,
+      "timeout": 0
+    },
+    "agent": {
+      "ok": 8,
+      "fail": 9,
+      "rate_limited": 0,
+      "timeout": 0
+    }
+  },
+  "unverified": [],
+  "notes": "429 backoff 2/4/8/16 s, max 4 retries; final 429 recorded as rate_limited. 12 s between models. Agent = OpenCode 1.18.18, isolated git repo, verified with node test.js. Basic values reused from runs/20261107-004121/basic-results.json (HTTP 200 subset). Tool rows not marked ok were retested with max_tokens=512 and the same 429 backoff; final 429 is rate_limited. Agent fails: 9 Claude models returned HTTP 400 'Third-party apps now draw from your extra usage' in OpenCode even though direct API returned 200. Tool rate_limited: Claude Opus 4.5 and Opus 4.6 (continuation 429 after 4 retries)."
+}

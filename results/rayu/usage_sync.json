@@ -1,0 +1,82 @@
+{
+  "snapshot_utc": "2026-11-07T16:30:42Z",
+  "dashboard_captured_utc": "2026-11-07T16:48:59Z",
+  "api": {
+    "endpoint": "GET https://gateway.rayucode.com/v1/credits",
+    "http_status": 200,
+    "usedCredits": 45.34,
+    "remainingCredits": 109954.66,
+    "usedTokens": 45344,
+    "creditsPerPeriod": 110000,
+    "periodEnd": "2026-12-07T13:59:04Z",
+    "weekUsedCredits": 46.18,
+    "weekRemainingCredits": 24953.82,
+    "creditsPerWeek": 25000,
+    "windowUsedCredits": 46.18,
+    "windowRemainingCredits": 4953.82,
+    "creditsPer5h": 5000,
+    "sessionWindowMinutes": 300,
+    "turnsUsedToday": 76,
+    "limitMode": "gated",
+    "apiKey": {
+      "keyId": 88,
+      "creditLimit": null,
+      "allowedModels": [],
+      "rateLimitRpm": null
+    }
+  },
+  "dashboard": {
+    "captured": true,
+    "source": "https://rayucode.com/dashboard/usage",
+    "credits_used_total": 46.18,
+    "requests": 76,
+    "failed_requests": 5,
+    "total_tokens": 96400,
+    "tokens_in": 93500,
+    "tokens_out": 2900,
+    "cache_hits_percent": 24,
+    "credit_source_split_plan": 45.344,
+    "credit_source_split_payg": 0,
+    "usage_by_hosting": [{"hosting": "rayu", "credits": 46.18}],
+    "usage_by_api_key": [{"key_name": "rayucode01", "requests": 76, "credits": 46.18, "status": "active"}],
+    "credits_by_model_top10": [
+      {"model": "glm-5.3-flash-cloud", "credits": 18.39},
+      {"model": "qwen3.8-max", "credits": 11.54},
+      {"model": "kimi-k3.1-pro", "credits": 9.46},
+      {"model": "claude-sonnet-5.5", "credits": 1.55},
+      {"model": "deepseek-v4.1-flash-1017-cloud", "credits": 1.4},
+      {"model": "kimi-for-coding", "credits": 0.89},
+      {"model": "glm-5.3-cloud", "credits": 0.85},
+      {"model": "claude-haiku-5.5", "credits": 0.7},
+      {"model": "minimax-m3.1-flash-cloud", "credits": 0.66},
+      {"model": "kimi-k2.7", "credits": 0.27}
+    ],
+    "credits_by_model_top10_sum": 45.71,
+    "credits_by_model_other": 0.47
+  },
+  "comparison": {
+    "api_usedCredits": 45.34,
+    "dashboard_total": 46.18,
+    "source_split_total": 45.344,
+    "diff_dashboard_minus_source_split": 0.836,
+    "diff_api_week_minus_period": 0.84,
+    "matched_fields": [
+      "dashboard CREDITS USED 46.18 = API weekUsedCredits/windowUsedCredits 46.18",
+      "dashboard Plan credits 45.344 = API usedCredits 45.34 (API rounds to 2 decimals)",
+      "dashboard PAYG 0 = API topupBalance 0",
+      "dashboard Usage by hosting rayu 46.18 = dashboard top-line 46.18",
+      "dashboard Usage by API key rayucode01 76 requests / 46.18 = dashboard requests 76 / top-line 46.18"
+    ],
+    "mismatched_fields": [
+      "dashboard top-line 46.18 vs Credit Source Split Plan 45.344 (0.836 gap inside the dashboard)",
+      "credits-by-model top10 sum 45.71 vs top-line 46.18 (residual 0.47) and vs plan 45.344 (sum is 0.366 higher)"
+    ],
+    "previous_snapshot": {
+      "snapshot_utc": "2026-11-07T14:28:20Z",
+      "usedCredits": 45.31,
+      "weekUsedCredits": 46.14,
+      "windowUsedCredits": 46.14,
+      "gap": 0.83
+    }
+  }
+}

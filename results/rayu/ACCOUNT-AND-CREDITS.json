@@ -1,0 +1,57 @@
+{
+  "snapshot_utc": "2026-11-07T14:28:20.7562688Z",
+  "service": "Rayu Code",
+  "plan": "pro",
+  "plan_name": "Pro",
+  "price_cents": 499,
+  "period_end": "2026-12-07T13:59:04Z",
+  "period_end_utc": "2026-12-07T13:59:04Z",
+  "credits_per_period_api": 110000,
+  "credits_per_period_entitlements": 100000,
+  "receipt_grant_credits": 100000,
+  "dashboard_display_credits": 110000,
+  "used_credits": 45.31,
+  "remaining_credits": 109954.69,
+  "used_tokens": 45309,
+  "remaining_tokens": 109954691,
+  "topup_balance": 0.0,
+  "topup_enabled": true,
+  "credits_per_dollar": 19000,
+  "min_topup_cents": 100,
+  "weekly": {
+    "cap": 25000,
+    "used": 46.14,
+    "remaining": 24953.86,
+    "reset_seconds": 120700
+  },
+  "session_5h": {
+    "cap": 5000,
+    "used": 46.14,
+    "remaining": 4953.86,
+    "window_minutes": 300,
+    "reset_seconds": 18000
+  },
+  "limit_mode": "gated",
+  "max_daily_turns": null,
+  "turns_used_today": 71,
+  "api_key": {
+    "key_id": 88,
+    "credit_limit": null,
+    "allowed_models": [],
+    "rate_limit_rpm": null,
+    "fingerprint": "...cmmE",
+    "status": "ACTIVE"
+  },
+  "user": {
+    "user_id": 15108,
+    "masked": "u***108",
+    "role": "user"
+  },
+  "discrepancies": [
+    "receipt/dashboard 100,000 vs /v1/credits 110,000 vs /v1/_entitlements 100,000: +10,000 unexplained (likely Free->Pro carryover/bonus); unresolved",
+    "priceCents=499 ($4.99) vs docs Pro $10/mo: promotion pricing",
+    "weekly cap 25,000 vs docs 12,500; 5h cap 5,000 vs docs 625: account-specific overrides",
+    "weekly/window counters 46.14 exceed period usedCredits 45.31 by 0.83: counter drift",
+    "api key creditLimit/rateLimitRpm are null (no per-key cap): recommended 150-credit cap not applied"
+  ]
+}

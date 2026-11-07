@@ -1,0 +1,101 @@
+{
+  "label": "tool-call",
+  "timestamp_utc": "2026-11-07T13:15:25.9757581Z",
+  "client": "harogo-openai-compat/HttpClient(PowerShell 7.6.5)",
+  "endpoint": "https://api.harogo.ai/v1/chat/completions",
+  "requested_model": "minimax-m3",
+  "returned_model": "minimax-m3",
+  "http_status": 200,
+  "timed_out": false,
+  "elapsed_ms": 1145.0,
+  "content": "I'll calculate that for you.",
+  "finish_reason": "tool_calls",
+  "tool_calls": [
+    {
+      "id": "call_01a1b6264a867673bb8b7d35",
+      "type": "function",
+      "function": {
+        "name": "add_integers",
+        "arguments": "{\"a\":19,\"b\":23}"
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 466,
+    "cached_tokens": 225,
+    "completion_tokens": 42,
+    "reasoning_tokens": null,
+    "total_tokens": 508
+  },
+  "response_id": "resp_073e576c3398dedb04449b79415515eb",
+  "response_headers": {
+    "content-type": "application/json; charset=utf-8",
+    "x-request-id": "15887310-b81f-4c39-9f86-334d16032256",
+    "server": "cloudflare",
+    "date": "Sat, 07 Nov 2026 13:15:25 GMT",
+    "cf-ray": "a56c9b45ab45d52f-NRT",
+    "via": "1.1 google"
+  },
+  "error": null,
+  "request": {
+    "model": "minimax-m3",
+    "max_tokens": 128,
+    "messages": [
+      {
+        "content": "Use the add_integers tool to calculate 19 + 23.",
+        "role": "user"
+      }
+    ],
+    "stream": false,
+    "tools": [
+      {
+        "function": {
+          "parameters": {
+            "type": "object",
+            "required": [
+              "a",
+              "b"
+            ],
+            "properties": {
+              "a": {
+                "description": "first integer",
+                "type": "integer"
+              },
+              "b": {
+                "description": "second integer",
+                "type": "integer"
+              }
+            }
+          },
+          "name": "add_integers",
+          "description": "Add two integers and return the sum."
+        },
+        "type": "function"
+      }
+    ],
+    "tool_choice": "auto"
+  },
+  "raw_response": "{\"id\":\"resp_073e576c3398dedb04449b79415515eb\",\"object\":\"chat.completion\",\"created\":1794057325,\"model\":\"minimax-m3\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"I'll calculate that for you.\",\"tool_calls\":[{\"id\":\"call_01a1b6264a867673bb8b7d35\",\"type\":\"function\",\"function\":{\"name\":\"add_integers\",\"arguments\":\"{\\\"a\\\":19,\\\"b\\\":23}\"}}]},\"finish_reason\":\"tool_calls\"}],\"usage\":{\"prompt_tokens\":466,\"completion_tokens\":42,\"total_tokens\":508,\"prompt_tokens_details\":{\"cached_tokens\":225}},\"service_tier\":\"auto\"}",
+  "tool_call_generated": true,
+  "tool_name_match": true,
+  "tool_args_match": true,
+  "followup": {
+    "timestamp_utc": "2026-11-07T13:15:27.0310307Z",
+    "http_status": 200,
+    "elapsed_ms": 1037.1,
+    "content": "19 + 23 = **42**",
+    "finish_reason": "stop",
+    "response_id": "resp_073e576d5fc5898d5fb91d26feb09806",
+    "usage": {
+      "prompt_tokens": 518,
+      "completion_tokens": 10,
+      "total_tokens": 528,
+      "prompt_tokens_details": {
+        "cached_tokens": 466
+      }
+    },
+    "error": null,
+    "raw_response": "{\"id\":\"resp_073e576d5fc5898d5fb91d26feb09806\",\"object\":\"chat.completion\",\"created\":1794057326,\"model\":\"minimax-m3\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"19 + 23 = **42**\"},\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":518,\"completion_tokens\":10,\"total_tokens\":528,\"prompt_tokens_details\":{\"cached_tokens\":466}},\"service_tier\":\"auto\"}"
+  },
+  "followup_ok": true
+}

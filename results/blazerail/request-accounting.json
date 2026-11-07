@@ -1,0 +1,49 @@
+{
+  "generated_utc": "2026-11-06T16:06:52Z",
+  "api_requests": 110,
+  "opencode_requests": 8,
+  "total_requests": 118,
+  "max_requests": 120,
+  "api_weighted_tokens": 29768,
+  "opencode_weighted_tokens": 98313,
+  "weighted_tokens_estimated": 128081,
+  "weighted_budget": 250000,
+  "dashboard_start_weighted": 338400,
+  "dashboard_estimated_after": 466481,
+  "dashboard_cap_weighted": 1000000,
+  "stop_reason": null,
+  "balance_drain": false,
+  "opencode_detail": [
+    {
+      "model": "google/gemini-4-argon:free",
+      "success": true,
+      "steps": 3,
+      "tool_calls": 3,
+      "final_text": "42",
+      "error": null
+    },
+    {
+      "model": "anthropic/claude-haiku-4.5:free",
+      "success": false,
+      "steps": 0,
+      "tool_calls": 0,
+      "final_text": "",
+      "error": {
+        "status": 400,
+        "message": "Third-party apps now draw from your extra usage, not your plan limits. Add more at claude.ai/settings/usage and keep going. [type=invalid_request_error request_id=req_011Cgmx9g3tbm6DQLXxfWbRC]"
+      }
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "success": true,
+      "steps": 4,
+      "tool_calls": 3,
+      "final_text": "42",
+      "error": null
+    }
+  ],
+  "api_request_log": [
+    null
+  ],
+  "notes": "Total counts API-direct requests plus OpenCode agent steps. Failed OpenCode runs count as one request even when no step_finish token usage was returned (12k input estimated). No automatic retry. Key never stored."
+}

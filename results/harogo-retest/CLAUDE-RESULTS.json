@@ -1,0 +1,430 @@
+[
+  {
+    "label": "claude-code",
+    "timestamp_utc": "2026-11-07T13:14:44.3945659Z",
+    "client": "official Claude Code CLI 2.1.318",
+    "model": "claude-opus-5-5",
+    "invoked_with": "-p \"Reply exactly OK.\" --model claude-opus-5-5 --no-session-persistence --max-budget-usd 0.02 --output-format json",
+    "os_timeout_seconds": 30,
+    "timed_out": false,
+    "elapsed_ms": 1290.6,
+    "exit_code": 1,
+    "inferred_http_status": 503,
+    "content_ok": false,
+    "output": "{\"duration_api_ms\":0,\"stop_reason\":\"stop_sequence\",\"session_id\":\"9f53971c-a47d-4f5c-ada5-fdc340bbab30\",\"total_cost_usd\":0,\"usage\":{\"output_tokens_details\":{\"thinking_tokens\":0},\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\",\"fallback_credit\":null},\"modelUsage\":{},\"permission_denials\":[],\"terminal_reason\":\"api_error\",\"fast_mode_state\":\"off\",\"fast_mode_disabled_reason\":\"sdk_opt_in_required\",\"subagent_stats\":{\"spawned\":0,\"requested\":{\"background\":0,\"foreground\":0,\"unset\":0},\"started_in_background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num_turns\":1,\"subtype\":\"success\",\"api_error_status\":503,\"result\":\"API Error: 503 No available accounts: no available accounts. This is a server-side issue, usually temporary — try again in a moment. If it persists, check your inference gateway (api.harogo.ai).\",\"type\":\"result\",\"duration_ms\":398,\"uuid\":\"23c1c8ba-d503-43fe-a812-4bfd303a3a5b\",\"queued_turn_count\":0,\"result_index\":0}",
+    "output_json": {
+      "duration_api_ms": 0,
+      "stop_reason": "stop_sequence",
+      "session_id": "9f53971c-a47d-4f5c-ada5-fdc340bbab30",
+      "total_cost_usd": 0,
+      "usage": {
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "input_tokens": 0,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 0,
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "",
+        "iterations": [],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "modelUsage": {},
+      "permission_denials": [],
+      "terminal_reason": "api_error",
+      "fast_mode_state": "off",
+      "fast_mode_disabled_reason": "sdk_opt_in_required",
+      "subagent_stats": {
+        "spawned": 0,
+        "requested": {
+          "background": 0,
+          "foreground": 0,
+          "unset": 0
+        },
+        "started_in_background": 0,
+        "max_depth": 0,
+        "spawned_by_subagents": 0,
+        "completed": 0,
+        "failed": 0,
+        "killed": {
+          "parent": 0,
+          "user": 0,
+          "system": 0
+        },
+        "refused": {
+          "depth_limit": 0,
+          "concurrency_limit": 0,
+          "budget": 0
+        },
+        "by_type": {}
+      },
+      "safety_stops": 0,
+      "is_error": true,
+      "num_turns": 1,
+      "subtype": "success",
+      "api_error_status": 503,
+      "result": "API Error: 503 No available accounts: no available accounts. This is a server-side issue, usually temporary — try again in a moment. If it persists, check your inference gateway (api.harogo.ai).",
+      "type": "result",
+      "duration_ms": 398,
+      "uuid": "23c1c8ba-d503-43fe-a812-4bfd303a3a5b",
+      "queued_turn_count": 0,
+      "result_index": 0
+    },
+    "claude_reported_cost_usd": 0,
+    "claude_reported_usage": {
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 0,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "is_error": true,
+    "error": "{\"duration_api_ms\":0,\"stop_reason\":\"stop_sequence\",\"session_id\":\"9f53971c-a47d-4f5c-ada5-fdc340bbab30\",\"total_cost_usd\":0,\"usage\":{\"output_tokens_details\":{\"thinking_tokens\":0},\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\",\"fallback_credit\":null},\"modelUsage\":{},\"permission_denials\":[],\"terminal_reason\":\"api_error\",\"fast_mode_state\":\"off\",\"fast_mode_disabled_reason\":\"sdk_opt_in_required\",\"subagent_stats\":{\"spawned\":0,\"requested\":{\"background\":0,\"foreground\":0,\"unset\":0},\"started_in_background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num_turns\":1,\"subtype\":\"success\",\"api_error_status\":503,\"result\":\"API Error: 503 No available accounts: no available accounts. This is a server-side issue, usually temporary — try again in a moment. If it persists, check your inference gateway (api.harogo.ai).\",\"type\":\"result\",\"duration_ms\":398,\"uuid\":\"23c1c8ba-d503-43fe-a812-4bfd303a3a5b\",\"queued_turn_count\":0,\"result_index\":0}"
+  },
+  {
+    "label": "claude-code",
+    "timestamp_utc": "2026-11-07T13:14:47.0552752Z",
+    "client": "official Claude Code CLI 2.1.318",
+    "model": "claude-haiku-5-5",
+    "invoked_with": "-p \"Reply exactly OK.\" --model claude-haiku-5-5 --no-session-persistence --max-budget-usd 0.02 --output-format json",
+    "os_timeout_seconds": 30,
+    "timed_out": false,
+    "elapsed_ms": 1413.8,
+    "exit_code": 1,
+    "inferred_http_status": 503,
+    "content_ok": false,
+    "output": "{\"duration_api_ms\":0,\"stop_reason\":\"stop_sequence\",\"session_id\":\"8f0f20b7-c15b-48fb-9680-df5f3220d925\",\"total_cost_usd\":0,\"usage\":{\"output_tokens_details\":{\"thinking_tokens\":0},\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\",\"fallback_credit\":null},\"modelUsage\":{},\"permission_denials\":[],\"terminal_reason\":\"api_error\",\"fast_mode_state\":\"off\",\"fast_mode_disabled_reason\":\"sdk_opt_in_required\",\"subagent_stats\":{\"spawned\":0,\"requested\":{\"background\":0,\"foreground\":0,\"unset\":0},\"started_in_background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num_turns\":1,\"subtype\":\"success\",\"api_error_status\":503,\"result\":\"API Error: 503 No available accounts: no available accounts. This is a server-side issue, usually temporary — try again in a moment. If it persists, check your inference gateway (api.harogo.ai).\",\"type\":\"result\",\"duration_ms\":522,\"uuid\":\"b8d1ffbc-a5ea-4ab4-a1ed-7845c99af927\",\"queued_turn_count\":0,\"result_index\":0}",
+    "output_json": {
+      "duration_api_ms": 0,
+      "stop_reason": "stop_sequence",
+      "session_id": "8f0f20b7-c15b-48fb-9680-df5f3220d925",
+      "total_cost_usd": 0,
+      "usage": {
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "input_tokens": 0,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 0,
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "",
+        "iterations": [],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "modelUsage": {},
+      "permission_denials": [],
+      "terminal_reason": "api_error",
+      "fast_mode_state": "off",
+      "fast_mode_disabled_reason": "sdk_opt_in_required",
+      "subagent_stats": {
+        "spawned": 0,
+        "requested": {
+          "background": 0,
+          "foreground": 0,
+          "unset": 0
+        },
+        "started_in_background": 0,
+        "max_depth": 0,
+        "spawned_by_subagents": 0,
+        "completed": 0,
+        "failed": 0,
+        "killed": {
+          "parent": 0,
+          "user": 0,
+          "system": 0
+        },
+        "refused": {
+          "depth_limit": 0,
+          "concurrency_limit": 0,
+          "budget": 0
+        },
+        "by_type": {}
+      },
+      "safety_stops": 0,
+      "is_error": true,
+      "num_turns": 1,
+      "subtype": "success",
+      "api_error_status": 503,
+      "result": "API Error: 503 No available accounts: no available accounts. This is a server-side issue, usually temporary — try again in a moment. If it persists, check your inference gateway (api.harogo.ai).",
+      "type": "result",
+      "duration_ms": 522,
+      "uuid": "b8d1ffbc-a5ea-4ab4-a1ed-7845c99af927",
+      "queued_turn_count": 0,
+      "result_index": 0
+    },
+    "claude_reported_cost_usd": 0,
+    "claude_reported_usage": {
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 0,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "is_error": true,
+    "error": "{\"duration_api_ms\":0,\"stop_reason\":\"stop_sequence\",\"session_id\":\"8f0f20b7-c15b-48fb-9680-df5f3220d925\",\"total_cost_usd\":0,\"usage\":{\"output_tokens_details\":{\"thinking_tokens\":0},\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\",\"fallback_credit\":null},\"modelUsage\":{},\"permission_denials\":[],\"terminal_reason\":\"api_error\",\"fast_mode_state\":\"off\",\"fast_mode_disabled_reason\":\"sdk_opt_in_required\",\"subagent_stats\":{\"spawned\":0,\"requested\":{\"background\":0,\"foreground\":0,\"unset\":0},\"started_in_background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num_turns\":1,\"subtype\":\"success\",\"api_error_status\":503,\"result\":\"API Error: 503 No available accounts: no available accounts. This is a server-side issue, usually temporary — try again in a moment. If it persists, check your inference gateway (api.harogo.ai).\",\"type\":\"result\",\"duration_ms\":522,\"uuid\":\"b8d1ffbc-a5ea-4ab4-a1ed-7845c99af927\",\"queued_turn_count\":0,\"result_index\":0}"
+  },
+  {
+    "label": "claude-code",
+    "timestamp_utc": "2026-11-07T13:14:49.4698659Z",
+    "client": "official Claude Code CLI 2.1.318",
+    "model": "claude-fable-5-1",
+    "invoked_with": "-p \"Reply exactly OK.\" --model claude-fable-5-1 --no-session-persistence --max-budget-usd 0.02 --output-format json",
+    "os_timeout_seconds": 30,
+    "timed_out": false,
+    "elapsed_ms": 1191.2,
+    "exit_code": 1,
+    "inferred_http_status": 503,
+    "content_ok": false,
+    "output": "{\"duration_api_ms\":0,\"stop_reason\":\"stop_sequence\",\"session_id\":\"8125d977-eeb5-4c0e-bb7c-49c3e84969dc\",\"total_cost_usd\":0,\"usage\":{\"output_tokens_details\":{\"thinking_tokens\":0},\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\",\"fallback_credit\":null},\"modelUsage\":{},\"permission_denials\":[],\"terminal_reason\":\"api_error\",\"fast_mode_state\":\"off\",\"fast_mode_disabled_reason\":\"sdk_opt_in_required\",\"subagent_stats\":{\"spawned\":0,\"requested\":{\"background\":0,\"foreground\":0,\"unset\":0},\"started_in_background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num_turns\":1,\"subtype\":\"success\",\"api_error_status\":503,\"result\":\"API Error: 503 No available accounts: no available accounts. This is a server-side issue, usually temporary — try again in a moment. If it persists, check your inference gateway (api.harogo.ai).\",\"type\":\"result\",\"duration_ms\":316,\"uuid\":\"819d76b3-c18f-4d5f-bcf3-cd67be1cad16\",\"queued_turn_count\":0,\"result_index\":0}",
+    "output_json": {
+      "duration_api_ms": 0,
+      "stop_reason": "stop_sequence",
+      "session_id": "8125d977-eeb5-4c0e-bb7c-49c3e84969dc",
+      "total_cost_usd": 0,
+      "usage": {
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "input_tokens": 0,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 0,
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "",
+        "iterations": [],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "modelUsage": {},
+      "permission_denials": [],
+      "terminal_reason": "api_error",
+      "fast_mode_state": "off",
+      "fast_mode_disabled_reason": "sdk_opt_in_required",
+      "subagent_stats": {
+        "spawned": 0,
+        "requested": {
+          "background": 0,
+          "foreground": 0,
+          "unset": 0
+        },
+        "started_in_background": 0,
+        "max_depth": 0,
+        "spawned_by_subagents": 0,
+        "completed": 0,
+        "failed": 0,
+        "killed": {
+          "parent": 0,
+          "user": 0,
+          "system": 0
+        },
+        "refused": {
+          "depth_limit": 0,
+          "concurrency_limit": 0,
+          "budget": 0
+        },
+        "by_type": {}
+      },
+      "safety_stops": 0,
+      "is_error": true,
+      "num_turns": 1,
+      "subtype": "success",
+      "api_error_status": 503,
+      "result": "API Error: 503 No available accounts: no available accounts. This is a server-side issue, usually temporary — try again in a moment. If it persists, check your inference gateway (api.harogo.ai).",
+      "type": "result",
+      "duration_ms": 316,
+      "uuid": "819d76b3-c18f-4d5f-bcf3-cd67be1cad16",
+      "queued_turn_count": 0,
+      "result_index": 0
+    },
+    "claude_reported_cost_usd": 0,
+    "claude_reported_usage": {
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 0,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "is_error": true,
+    "error": "{\"duration_api_ms\":0,\"stop_reason\":\"stop_sequence\",\"session_id\":\"8125d977-eeb5-4c0e-bb7c-49c3e84969dc\",\"total_cost_usd\":0,\"usage\":{\"output_tokens_details\":{\"thinking_tokens\":0},\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\",\"fallback_credit\":null},\"modelUsage\":{},\"permission_denials\":[],\"terminal_reason\":\"api_error\",\"fast_mode_state\":\"off\",\"fast_mode_disabled_reason\":\"sdk_opt_in_required\",\"subagent_stats\":{\"spawned\":0,\"requested\":{\"background\":0,\"foreground\":0,\"unset\":0},\"started_in_background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num_turns\":1,\"subtype\":\"success\",\"api_error_status\":503,\"result\":\"API Error: 503 No available accounts: no available accounts. This is a server-side issue, usually temporary — try again in a moment. If it persists, check your inference gateway (api.harogo.ai).\",\"type\":\"result\",\"duration_ms\":316,\"uuid\":\"819d76b3-c18f-4d5f-bcf3-cd67be1cad16\",\"queued_turn_count\":0,\"result_index\":0}"
+  },
+  {
+    "label": "claude-code",
+    "timestamp_utc": "2026-11-07T13:14:52.4817658Z",
+    "client": "official Claude Code CLI 2.1.318",
+    "model": "claude-sonnet-5",
+    "invoked_with": "-p \"Reply exactly OK.\" --model claude-sonnet-5 --no-session-persistence --max-budget-usd 0.02 --output-format json",
+    "os_timeout_seconds": 30,
+    "timed_out": false,
+    "elapsed_ms": 1797.2,
+    "exit_code": 1,
+    "inferred_http_status": null,
+    "content_ok": false,
+    "output": "{\"duration_api_ms\":0,\"stop_reason\":\"stop_sequence\",\"session_id\":\"8456224a-1d68-4fea-90a7-49c5071754ef\",\"total_cost_usd\":0,\"usage\":{\"output_tokens_details\":{\"thinking_tokens\":0},\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\",\"fallback_credit\":null},\"modelUsage\":{},\"permission_denials\":[],\"terminal_reason\":\"api_error\",\"fast_mode_state\":\"off\",\"fast_mode_disabled_reason\":\"sdk_opt_in_required\",\"subagent_stats\":{\"spawned\":0,\"requested\":{\"background\":0,\"foreground\":0,\"unset\":0},\"started_in_background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num_turns\":1,\"subtype\":\"success\",\"api_error_status\":404,\"result\":\"There's an issue with the selected model (claude-sonnet-5). It may not exist or you may not have access to it. Run --model to pick a different model.\",\"type\":\"result\",\"duration_ms\":907,\"uuid\":\"8d96537a-134c-4f2a-a1d5-ed3ccabd28f8\",\"queued_turn_count\":0,\"result_index\":0}",
+    "output_json": {
+      "duration_api_ms": 0,
+      "stop_reason": "stop_sequence",
+      "session_id": "8456224a-1d68-4fea-90a7-49c5071754ef",
+      "total_cost_usd": 0,
+      "usage": {
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "input_tokens": 0,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 0,
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "",
+        "iterations": [],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "modelUsage": {},
+      "permission_denials": [],
+      "terminal_reason": "api_error",
+      "fast_mode_state": "off",
+      "fast_mode_disabled_reason": "sdk_opt_in_required",
+      "subagent_stats": {
+        "spawned": 0,
+        "requested": {
+          "background": 0,
+          "foreground": 0,
+          "unset": 0
+        },
+        "started_in_background": 0,
+        "max_depth": 0,
+        "spawned_by_subagents": 0,
+        "completed": 0,
+        "failed": 0,
+        "killed": {
+          "parent": 0,
+          "user": 0,
+          "system": 0
+        },
+        "refused": {
+          "depth_limit": 0,
+          "concurrency_limit": 0,
+          "budget": 0
+        },
+        "by_type": {}
+      },
+      "safety_stops": 0,
+      "is_error": true,
+      "num_turns": 1,
+      "subtype": "success",
+      "api_error_status": 404,
+      "result": "There's an issue with the selected model (claude-sonnet-5). It may not exist or you may not have access to it. Run --model to pick a different model.",
+      "type": "result",
+      "duration_ms": 907,
+      "uuid": "8d96537a-134c-4f2a-a1d5-ed3ccabd28f8",
+      "queued_turn_count": 0,
+      "result_index": 0
+    },
+    "claude_reported_cost_usd": 0,
+    "claude_reported_usage": {
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 0,
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "is_error": true,
+    "error": "{\"duration_api_ms\":0,\"stop_reason\":\"stop_sequence\",\"session_id\":\"8456224a-1d68-4fea-90a7-49c5071754ef\",\"total_cost_usd\":0,\"usage\":{\"output_tokens_details\":{\"thinking_tokens\":0},\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\",\"fallback_credit\":null},\"modelUsage\":{},\"permission_denials\":[],\"terminal_reason\":\"api_error\",\"fast_mode_state\":\"off\",\"fast_mode_disabled_reason\":\"sdk_opt_in_required\",\"subagent_stats\":{\"spawned\":0,\"requested\":{\"background\":0,\"foreground\":0,\"unset\":0},\"started_in_background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num_turns\":1,\"subtype\":\"success\",\"api_error_status\":404,\"result\":\"There's an issue with the selected model (claude-sonnet-5). It may not exist or you may not have access to it. Run --model to pick a different model.\",\"type\":\"result\",\"duration_ms\":907,\"uuid\":\"8d96537a-134c-4f2a-a1d5-ed3ccabd28f8\",\"queued_turn_count\":0,\"result_index\":0}"
+  }
+]

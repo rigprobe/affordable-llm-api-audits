@@ -1,0 +1,162 @@
+{
+  "generated_utc": "2026-11-06T16:06:52Z",
+  "method": "TTFT and total from the SSE stream; decode_tps only when usage.completion_tokens and >=2 content deltas exist. 1 chunk is not counted as 1 token.",
+  "samples": [
+    {
+      "model": "anthropic/claude-fable-5-1:free",
+      "label": "Claude Fable 5.1",
+      "ttft_ms": 3006.1,
+      "stream_total_ms": 4074.2,
+      "basic_total_ms": 1378.4,
+      "deltas": 10,
+      "single_batch": false,
+      "decode_tps": null,
+      "completion_tokens": null,
+      "source": "pass2"
+    },
+    {
+      "model": "anthropic/claude-haiku-4.5:free",
+      "label": "Claude Haiku 4.5",
+      "ttft_ms": 1187.3,
+      "stream_total_ms": 1508.2,
+      "basic_total_ms": 1239.1,
+      "deltas": 12,
+      "single_batch": false,
+      "decode_tps": null,
+      "completion_tokens": null,
+      "source": "pass2"
+    },
+    {
+      "model": "anthropic/claude-opus-4-7:free",
+      "label": "Claude Opus 4.7",
+      "ttft_ms": 1166.3,
+      "stream_total_ms": 2030.7,
+      "basic_total_ms": 1919.6,
+      "deltas": 14,
+      "single_batch": false,
+      "decode_tps": null,
+      "completion_tokens": null,
+      "source": "pass2"
+    },
+    {
+      "model": "anthropic/claude-opus-4.5:free",
+      "label": "Claude Opus 4.5",
+      "ttft_ms": 2496.4,
+      "stream_total_ms": 3104.8,
+      "basic_total_ms": 2598.0,
+      "deltas": 11,
+      "single_batch": false,
+      "decode_tps": null,
+      "completion_tokens": null,
+      "source": "pass2"
+    },
+    {
+      "model": "anthropic/claude-opus-4.8:free",
+      "label": "Claude Opus 4.8",
+      "ttft_ms": 1851.0,
+      "stream_total_ms": 2645.3,
+      "basic_total_ms": 2054.6,
+      "deltas": 13,
+      "single_batch": false,
+      "decode_tps": null,
+      "completion_tokens": null,
+      "source": "pass2"
+    },
+    {
+      "model": "openai/gpt-5.6-luna:free",
+      "label": "GPT-5.6 Luna",
+      "ttft_ms": 3354.6,
+      "stream_total_ms": 3355.8,
+      "basic_total_ms": 4190.2,
+      "deltas": 1,
+      "single_batch": true,
+      "decode_tps": null,
+      "completion_tokens": 30,
+      "source": "pass2"
+    },
+    {
+      "model": "meta/muse-glimmer-30b:free",
+      "label": "Muse Glimmer 30B",
+      "ttft_ms": 3364.5,
+      "stream_total_ms": 4905.8,
+      "basic_total_ms": 4220.0,
+      "deltas": 5,
+      "single_batch": false,
+      "decode_tps": null,
+      "completion_tokens": null,
+      "source": "pass2"
+    },
+    {
+      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "label": "Nemotron 3 Nano",
+      "ttft_ms": 1224.1,
+      "stream_total_ms": 1481.8,
+      "basic_total_ms": 2515.2,
+      "deltas": 31,
+      "single_batch": false,
+      "decode_tps": null,
+      "completion_tokens": null,
+      "source": "pass2"
+    },
+    {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "label": "Nemotron 3 Ultra",
+      "ttft_ms": 1853.6,
+      "stream_total_ms": null,
+      "basic_total_ms": 2339.6,
+      "deltas": 7,
+      "single_batch": false,
+      "decode_tps": null,
+      "completion_tokens": null,
+      "source": "pass1"
+    },
+    {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b:free",
+      "label": "Nemotron 3.5 Lightning",
+      "ttft_ms": null,
+      "stream_total_ms": 3342.9,
+      "basic_total_ms": 1180.9,
+      "deltas": 0,
+      "single_batch": false,
+      "decode_tps": null,
+      "completion_tokens": null,
+      "source": "pass2"
+    },
+    {
+      "model": "poolside/laguna-xs-2.1:free",
+      "label": "Laguna XS 2.1",
+      "ttft_ms": 2950.9,
+      "stream_total_ms": 3043.9,
+      "basic_total_ms": 1064.9,
+      "deltas": 14,
+      "single_batch": false,
+      "decode_tps": null,
+      "completion_tokens": null,
+      "source": "pass2"
+    },
+    {
+      "model": "anthropic/claude-opus-5-5:free",
+      "label": "Claude Opus 5.5",
+      "ttft_ms": 904.1,
+      "stream_total_ms": null,
+      "basic_total_ms": 1357.4,
+      "deltas": 8,
+      "single_batch": false,
+      "decode_tps": null,
+      "completion_tokens": null,
+      "source": "pass1"
+    },
+    {
+      "model": "google/gemini-4-argon:free",
+      "label": "Gemini 4 Argon",
+      "ttft_ms": 3679.0,
+      "stream_total_ms": 3781.3,
+      "basic_total_ms": 6485.0,
+      "deltas": 3,
+      "single_batch": false,
+      "decode_tps": null,
+      "completion_tokens": null,
+      "source": "pass2"
+    }
+  ]
+}

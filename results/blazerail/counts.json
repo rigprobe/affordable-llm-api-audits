@@ -1,0 +1,26 @@
+{
+  "basic": {
+    "ok": 17,
+    "fail": 0,
+    "rate_limited": 0,
+    "timeout": 0
+  },
+  "tool": {
+    "ok": 15,
+    "fail": 0,
+    "rate_limited": 2,
+    "timeout": 0
+  },
+  "stream": {
+    "ok": 11,
+    "fail": 6,
+    "rate_limited": 0,
+    "timeout": 0
+  },
+  "agent": {
+    "ok": 8,
+    "fail": 9,
+    "rate_limited": 0,
+    "timeout": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "task": "harogo_matrix",
+  "run_dir": "harogo\\runs\\20261108-012923-matrix",
+  "tested_models": 10,
+  "counts": {
+    "basic": {
+      "ok": 10,
+      "fail": 0,
+      "unavailable": 9
+    },
+    "tool": {
+      "ok": 10,
+      "fail": 0,
+      "unavailable": 9
+    },
+    "stream": {
+      "ok": 10,
+      "fail": 0,
+      "unavailable": 9
+    }
+  },
+  "unverified": [],
+  "notes": "Claude系は公式Claude Code経由の実測。既存JSONの機械集計のみでAPI課金なし。kimi-k3.1-proのstreamはmax_tokens=512再試験のraw SSEで判定。"
+}

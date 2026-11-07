@@ -1,0 +1,150 @@
+[
+  {
+    "label": "basic",
+    "timestamp_utc": "2026-11-07T13:14:27.9777255Z",
+    "client": "harogo-openai-compat/HttpClient(PowerShell 7.6.5)",
+    "endpoint": "https://api.harogo.ai/v1/chat/completions",
+    "requested_model": "deepseek-v4-pro",
+    "returned_model": null,
+    "http_status": 404,
+    "timed_out": false,
+    "elapsed_ms": 304.4,
+    "content": null,
+    "finish_reason": null,
+    "tool_calls": null,
+    "usage": null,
+    "response_id": null,
+    "response_headers": {
+      "content-type": "application/json; charset=utf-8",
+      "x-request-id": "8b02fcfe-e8d1-490b-b24c-1f56ca9e11ce",
+      "server": "cloudflare",
+      "date": "Sat, 07 Nov 2026 13:14:27 GMT",
+      "cf-ray": "a56c99e08cd8afd4-NRT",
+      "via": "1.1 google"
+    },
+    "error": "[model_not_found] Model \"deepseek-v4-pro-0813\" is not supported by any configured account in this group",
+    "request": {
+      "model": "deepseek-v4-pro",
+      "max_tokens": 64,
+      "messages": [
+        {
+          "content": "Reply exactly OK.",
+          "role": "user"
+        }
+      ],
+      "stream": false
+    },
+    "raw_response": "{\"error\":{\"message\":\"Model \\\"deepseek-v4-pro-0813\\\" is not supported by any configured account in this group\",\"type\":\"model_not_found\"}}"
+  },
+  {
+    "label": "basic",
+    "timestamp_utc": "2026-11-07T13:14:29.0774272Z",
+    "client": "harogo-openai-compat/HttpClient(PowerShell 7.6.5)",
+    "endpoint": "https://api.harogo.ai/v1/chat/completions",
+    "requested_model": "qwen3.8-max",
+    "returned_model": null,
+    "http_status": 404,
+    "timed_out": false,
+    "elapsed_ms": 269.0,
+    "content": null,
+    "finish_reason": null,
+    "tool_calls": null,
+    "usage": null,
+    "response_id": null,
+    "response_headers": {
+      "content-type": "application/json; charset=utf-8",
+      "x-request-id": "da1256bd-1c07-4738-975f-236994a320b6",
+      "server": "cloudflare",
+      "date": "Sat, 07 Nov 2026 13:14:28 GMT",
+      "cf-ray": "a56c99e76ad7c4ee-NRT",
+      "via": "1.1 google"
+    },
+    "error": "[not_found_error] The model qwen3.8-max-preview has been retired and is no longer available. (tid: 2026110713142851205884904862367)",
+    "request": {
+      "model": "qwen3.8-max",
+      "max_tokens": 64,
+      "messages": [
+        {
+          "content": "Reply exactly OK.",
+          "role": "user"
+        }
+      ],
+      "stream": false
+    },
+    "raw_response": "{\"error\":{\"message\":\"The model qwen3.8-max-preview has been retired and is no longer available. (tid: 2026110713142851205884904862367)\",\"type\":\"not_found_error\"}}"
+  },
+  {
+    "label": "basic",
+    "timestamp_utc": "2026-11-07T13:14:30.1367084Z",
+    "client": "harogo-openai-compat/HttpClient(PowerShell 7.6.5)",
+    "endpoint": "https://api.harogo.ai/v1/chat/completions",
+    "requested_model": "deepseek-v4-flash-0731",
+    "returned_model": null,
+    "http_status": 503,
+    "timed_out": false,
+    "elapsed_ms": 241.2,
+    "content": null,
+    "finish_reason": null,
+    "tool_calls": null,
+    "usage": null,
+    "response_id": null,
+    "response_headers": {
+      "content-type": "application/json; charset=utf-8",
+      "x-request-id": "64446c13-6357-4ddc-847b-fd08ec590e21",
+      "server": "cloudflare",
+      "date": "Sat, 07 Nov 2026 13:14:29 GMT",
+      "cf-ray": "a56c99ee3c8adee3-NRT",
+      "via": "1.1 google"
+    },
+    "error": "[api_error] Service temporarily unavailable",
+    "request": {
+      "model": "deepseek-v4-flash-0731",
+      "max_tokens": 64,
+      "messages": [
+        {
+          "content": "Reply exactly OK.",
+          "role": "user"
+        }
+      ],
+      "stream": false
+    },
+    "raw_response": "{\"error\":{\"message\":\"Service temporarily unavailable\",\"type\":\"api_error\"}}"
+  },
+  {
+    "label": "basic",
+    "timestamp_utc": "2026-11-07T13:14:31.2363096Z",
+    "client": "harogo-openai-compat/HttpClient(PowerShell 7.6.5)",
+    "endpoint": "https://api.harogo.ai/v1/chat/completions",
+    "requested_model": "gpt-5.6-terra",
+    "returned_model": null,
+    "http_status": 503,
+    "timed_out": false,
+    "elapsed_ms": 279.2,
+    "content": null,
+    "finish_reason": null,
+    "tool_calls": null,
+    "usage": null,
+    "response_id": null,
+    "response_headers": {
+      "content-type": "application/json; charset=utf-8",
+      "x-request-id": "a226375c-dd16-4723-a7c1-09e0a7c92295",
+      "server": "cloudflare",
+      "date": "Sat, 07 Nov 2026 13:14:30 GMT",
+      "cf-ray": "a56c99f4debe2692-NRT",
+      "via": "1.1 google"
+    },
+    "error": "[api_error] Service temporarily unavailable",
+    "request": {
+      "model": "gpt-5.6-terra",
+      "max_tokens": 64,
+      "messages": [
+        {
+          "content": "Reply exactly OK.",
+          "role": "user"
+        }
+      ],
+      "stream": false
+    },
+    "raw_response": "{\"error\":{\"message\":\"Service temporarily unavailable\",\"type\":\"api_error\"}}"
+  }
+]

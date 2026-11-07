@@ -1,0 +1,11 @@
+{
+  "task": "aihubmix_snapshot",
+  "run_dir": "opencode\\aihubmix-free-audit\\snapshot-20261108-012923",
+  "catalog_added": 0,
+  "catalog_removed": 5,
+  "recheck_ok": 23,
+  "recheck_404": 0,
+  "recheck_429": 0,
+  "unverified": [],
+  "notes": "Diff base is the 2026-11-04 FREE_CATALOG_ALL.csv (72 rows; 32 already retired). catalog_removed counts only rows that were active on 11-04. Recheck targets were the 23 models with basic_pass=True; pace 6 s (10/min). Live catalog HTTP 200, 35 ids. removed_vs_all=37, removed_vs_active=5, renamed_candidates=0. Of the 23 HTTP 200 responses, 3 returned non-empty content at max_tokens=8; the rest were reasoning models that spent the 8-token budget before emitting content. HTTP 200 is the availability criterion."
+}

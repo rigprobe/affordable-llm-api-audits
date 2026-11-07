@@ -1,0 +1,50 @@
+{
+  "captured_utc": "2026-11-07T16:48:59Z",
+  "captured_jst": "2026-11-08T01:48:59+09:00",
+  "source": "https://rayucode.com/dashboard/usage (logged-in session, read via in-app browser innerText)",
+  "credits_used_total": 46.18,
+  "requests": 76,
+  "failed_requests": 5,
+  "total_tokens": 96400,
+  "tokens_in": 93500,
+  "tokens_out": 2900,
+  "cache_hits_percent": 24,
+  "cached_tokens": 22700,
+  "avg_latency_ms": 1584,
+  "credit_source_split": {
+    "plan": 45.344,
+    "plan_percent": 100,
+    "payg": 0,
+    "payg_percent": 0
+  },
+  "usage_by_hosting": [
+    {"hosting": "rayu", "credits": 46.18}
+  ],
+  "usage_by_api_key": [
+    {"key_name": "rayucode01", "requests": 76, "credits": 46.18, "status": "active"}
+  ],
+  "usage_by_product": [
+    {"product": "Rayu API", "requests": 76}
+  ],
+  "credits_by_model_top10": [
+    {"model": "glm-5.3-flash-cloud", "credits": 18.39},
+    {"model": "qwen3.8-max", "credits": 11.54},
+    {"model": "kimi-k3.1-pro", "credits": 9.46},
+    {"model": "claude-sonnet-5.5", "credits": 1.55},
+    {"model": "deepseek-v4.1-flash-1017-cloud", "credits": 1.4},
+    {"model": "kimi-for-coding", "credits": 0.89},
+    {"model": "glm-5.3-cloud", "credits": 0.85},
+    {"model": "claude-haiku-5.5", "credits": 0.7},
+    {"model": "minimax-m3.1-flash-cloud", "credits": 0.66},
+    {"model": "kimi-k2.7", "credits": 0.27}
+  ],
+  "credits_by_model_top10_sum": 45.71,
+  "credits_by_model_other": 0.47,
+  "notes": [
+    "Dashboard CREDITS USED (46.18) matches /v1/credits weekUsedCredits and windowUsedCredits (46.18).",
+    "Dashboard Credit Source Split Plan credits (45.344) matches /v1/credits usedCredits (45.34, API rounds to 2 decimals).",
+    "The 0.836 gap is visible inside the dashboard itself: top-line 46.18 vs source split 45.344.",
+    "Top-10 model sum 45.71 matches neither 46.18 nor 45.344; 'other' 0.47 is the residual against the top-line.",
+    "The dashboard also reports 5 failed requests out of 76, which the /v1/credits response does not expose."
+  ]
+}

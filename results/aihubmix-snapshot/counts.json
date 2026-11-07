@@ -1,0 +1,11 @@
+{
+  "recheck_total": 23,
+  "recheck_ok": 23,
+  "recheck_404": 0,
+  "recheck_429": 0,
+  "recheck_other_error": 0,
+  "catalog_added": 0,
+  "catalog_removed_vs_all": 37,
+  "catalog_removed_vs_active": 5,
+  "recheck_content_nonempty": 3
+}

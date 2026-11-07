@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-11-07T13:18:08Z",
+  "previous_snapshot_utc": "2026-11-07T06:42:14Z",
+  "current_snapshot_utc": "2026-11-07T13:14:22Z",
+  "previous_catalog_count": 14,
+  "current_catalog_count": 14,
+  "previous_catalog": [
+    "minimax-m3",
+    "deepseek-v4-pro",
+    "deepseek-v4-flash-0731",
+    "kimi-k3",
+    "qwen3.8-max",
+    "gpt-6-luna",
+    "gpt-6-sol",
+    "glm-5.3",
+    "gpt-6.1-sol",
+    "gpt-6-astra",
+    "gpt-5.6-terra",
+    "deepseek-v4.1-flash-1017",
+    "kimi-k3.1-pro",
+    "gpt-6.1-terra"
+  ],
+  "current_catalog": [
+    "minimax-m3",
+    "deepseek-v4-pro",
+    "deepseek-v4-flash-0731",
+    "kimi-k3",
+    "qwen3.8-max",
+    "gpt-6-luna",
+    "gpt-6-sol",
+    "glm-5.3",
+    "gpt-6.1-sol",
+    "gpt-6-astra",
+    "gpt-5.6-terra",
+    "deepseek-v4.1-flash-1017",
+    "kimi-k3.1-pro",
+    "gpt-6.1-terra"
+  ],
+  "added": [],
+  "removed": [],
+  "renamed": [],
+  "unchanged": true,
+  "web_only_models": [
+    {
+      "in_web_catalog": true,
+      "id": "claude-opus-5-5",
+      "name": "Claude Opus 5.5",
+      "in_api_catalog": false
+    },
+    {
+      "in_web_catalog": true,
+      "id": "claude-sonnet-5",
+      "name": "Claude Sonnet 5",
+      "in_api_catalog": false
+    },
+    {
+      "in_web_catalog": true,
+      "id": "claude-sonnet-5.5",
+      "name": "Claude Sonnet 5.5",
+      "in_api_catalog": false
+    },
+    {
+      "in_web_catalog": true,
+      "id": "claude-haiku-5-5",
+      "name": "Claude Haiku 5.5",
+      "in_api_catalog": false
+    },
+    {
+      "in_web_catalog": true,
+      "id": "claude-fable-5-1",
+      "name": "Claude Fable 5.1",
+      "in_api_catalog": false
+    }
+  ],
+  "api_only_models": [
+    "deepseek-v4-flash-0731",
+    "kimi-k3",
+    "gpt-5.6-terra"
+  ],
+  "public_docs_last_modified": "2026-11-07T05:27:45Z (unchanged since previous audit)",
+  "note": "No catalog change between the two audits. Claude remains absent from GET /v1/models."
+}

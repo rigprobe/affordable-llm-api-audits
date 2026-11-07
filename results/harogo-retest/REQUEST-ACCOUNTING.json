@@ -1,0 +1,37 @@
+{
+  "generated_utc": "2026-11-07T13:18:08Z",
+  "explicit_inference_requests_sent": 12,
+  "cap": 15,
+  "breakdown": {
+    "api_target_basic": 4,
+    "api_target_basic_failures": {
+      "http_404": 2,
+      "http_503": 2
+    },
+    "claude_code_starts": 4,
+    "claude_code_cap": 4,
+    "control_basic": 1,
+    "control_tool_generation": 1,
+    "control_tool_followup": 1,
+    "control_streaming": 1
+  },
+  "claude_code_starts": 4,
+  "automatic_retries": 0,
+  "manual_retests": 0,
+  "harogo_counted_requests_delta": 4,
+  "not_counted_by_harogo": 8,
+  "not_counted_explanation": "8 failures were not counted: 4 API-target failures (404x2, 503x2) + 4 Claude Code failures (503x3, 404x1). Harogo only increments the request counter on billable 2xx completions.",
+  "claude_code_internal_resends": "unknown; CLAUDE_CODE_MAX_RETRIES=0 was set but the CLI does not expose an internal attempt counter. All four invocations completed in ~1.2-1.8 s and reported duration_api_ms=0 (no billable API call).",
+  "quota_delta_actual_cost_usd": 5.9844E-05,
+  "quota_stop_threshold_usd": 0.01,
+  "quota_threshold_met": true,
+  "additional_metered_billing_detected": false,
+  "token_delta": {
+    "input_tokens": 318,
+    "output_tokens": 116,
+    "cache_read_tokens": 1077,
+    "cache_creation_tokens": 0,
+    "total_tokens": 1511
+  },
+  "api_key_logged": false
+}

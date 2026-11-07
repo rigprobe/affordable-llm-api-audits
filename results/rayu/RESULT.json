@@ -1,0 +1,23 @@
+{
+  "task": "rayu_usage_sync",
+  "run_dir": "rayucode-api-audit\\runs\\20261108-012923-usage-sync",
+  "api_snapshot_utc": "2026-11-07T16:30:42Z",
+  "dashboard_snapshot_utc": "2026-11-07T16:48:59Z",
+  "api_usedCredits": 45.34,
+  "dashboard_total": 46.18,
+  "source_split_total": 45.344,
+  "diff": 0.836,
+  "matched_fields": [
+    "dashboard CREDITS USED = API weekUsedCredits/windowUsedCredits (46.18)",
+    "dashboard Plan credits = API usedCredits (45.344 vs 45.34, API rounds to 2 decimals)",
+    "dashboard PAYG = API topupBalance (0)",
+    "dashboard Usage by hosting = dashboard top-line (46.18)",
+    "dashboard Usage by API key = 76 requests / 46.18"
+  ],
+  "unverified": [
+    "0.836の原因は未確定。ダッシュボードのトップライン(7日/5時間カウンタ)とCredit Source Split(期間カウンタ)が別表示であることは確認したが、どちらが請求の正本かは未確定。",
+    "Credits by model 上位10合計45.71はトップライン46.18ともPlan 45.344とも一致しない（その他0.47 / Plan比+0.366）。配賦・丸めの差とみられるが未確定。",
+    "creditLimit / rateLimitRpm は null のまま。"
+  ],
+  "notes": "GET /v1/credits は1回のみ（推論なし）。ダッシュボードはログイン済みセッションで書き写した。キーは .secrets/rayu_api_key.txt、成果物には keyId=88 のみ。"
+}

@@ -1,0 +1,180 @@
+{
+  "generated_utc": "2026-11-06T16:07:49Z",
+  "harness": "OpenCode 1.18.18, OPENCODE_CONFIG=opencode.agent30.jsonc, --format json, isolated temp git repo agent-task",
+  "runs": [
+    {
+      "label": "haiku",
+      "model": "blazerail/anthropic/claude-haiku-4.5:free",
+      "session": "ses_e4e6a24bcffen6G594vOv66ac5",
+      "steps": 0,
+      "tool_calls": [],
+      "final_text": "",
+      "step_tokens": [],
+      "step_costs": [],
+      "error": {
+        "name": "APIError",
+        "status": 400,
+        "message": "Third-party apps now draw from your extra usage, not your plan limits. Add more at claude.ai/settings/usage and keep going. [type=invalid_request_error request_id=req_011Cgmx9g3tbm6DQLXxfWbRC]",
+        "request_id": "req"
+      }
+    },
+    {
+      "label": "gemini",
+      "model": "blazerail/google/gemini-4-argon:free",
+      "session": "ses_e4e691cc4ffeAlU4Y26q796m64",
+      "steps": 3,
+      "tool_calls": [
+        {
+          "tool": "write",
+          "status": "completed",
+          "input": {
+            "filePath": "opencode\\blazerail-verification\\runs\\20261107-004121\\agent-task\\math.js",
+            "content": "function add(a, b) {\n  return a + b;\n}\n\nmodule.exports = { add };\n"
+          }
+        },
+        {
+          "tool": "write",
+          "status": "completed",
+          "input": {
+            "content": "const { add } = require('./math');\nconsole.log(add(19, 23));\n",
+            "filePath": "opencode\\blazerail-verification\\runs\\20261107-004121\\agent-task\\test.js"
+          }
+        },
+        {
+          "tool": "bash",
+          "status": "completed",
+          "input": {
+            "command": "node test.js"
+          }
+        }
+      ],
+      "final_text": "42",
+      "step_tokens": [
+        {
+          "total": 12239,
+          "input": 12059,
+          "output": 180,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        },
+        {
+          "total": 12302,
+          "input": 12279,
+          "output": 23,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        },
+        {
+          "total": 12326,
+          "input": 12320,
+          "output": 6,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        }
+      ],
+      "step_costs": [
+        0,
+        0,
+        0
+      ],
+      "error": null
+    },
+    {
+      "label": "nemotron",
+      "model": "blazerail/nvidia/nemotron-3-ultra-550b-a55b:free",
+      "session": "ses_e4e677d6effexkBovb5RKwCHpB",
+      "steps": 4,
+      "tool_calls": [
+        {
+          "tool": "write",
+          "status": "completed",
+          "input": {
+            "filePath": "opencode\\blazerail-verification\\runs\\20261107-004121\\agent-task\\math.js",
+            "content": "function add(a, b) {\n  return a + b;\n}\n\nmodule.exports = { add };"
+          }
+        },
+        {
+          "tool": "write",
+          "status": "completed",
+          "input": {
+            "filePath": "opencode\\blazerail-verification\\runs\\20261107-004121\\agent-task\\test.js",
+            "content": "const { add } = require('./math');\nconsole.log(add(19, 23));"
+          }
+        },
+        {
+          "tool": "bash",
+          "status": "completed",
+          "input": {
+            "command": "node test.js"
+          }
+        }
+      ],
+      "final_text": "42",
+      "step_tokens": [
+        {
+          "total": 12217,
+          "input": 12063,
+          "output": 96,
+          "reasoning": 58,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        },
+        {
+          "total": 12355,
+          "input": 3470,
+          "output": 96,
+          "reasoning": 21,
+          "cache": {
+            "write": 0,
+            "read": 8768
+          }
+        },
+        {
+          "total": 12415,
+          "input": 3608,
+          "output": 27,
+          "reasoning": 12,
+          "cache": {
+            "write": 0,
+            "read": 8768
+          }
+        },
+        {
+          "total": 12459,
+          "input": 3666,
+          "output": 4,
+          "reasoning": 21,
+          "cache": {
+            "write": 0,
+            "read": 8768
+          }
+        }
+      ],
+      "step_costs": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "error": null
+    }
+  ],
+  "repo_verification": {
+    "note": "The repo currently holds the Nemotron run output; node test.js was re-run locally (no inference). Gemini and Nemotron both wrote equivalent files and printed 42.",
+    "math_js": "function add(a, b) {\n  return a + b;\n}\n\nmodule.exports = { add };",
+    "test_js": "const { add } = require('./math');\nconsole.log(add(19, 23));",
+    "node_test_output": "42",
+    "exit_code": 0
+  }
+}

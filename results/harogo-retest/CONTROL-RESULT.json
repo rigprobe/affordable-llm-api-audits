@@ -1,0 +1,43 @@
+{
+  "label": "control",
+  "timestamp_utc": "2026-11-07T13:15:18.5274046Z",
+  "client": "harogo-openai-compat/HttpClient(PowerShell 7.6.5)",
+  "endpoint": "https://api.harogo.ai/v1/chat/completions",
+  "requested_model": "minimax-m3",
+  "returned_model": "minimax-m3",
+  "http_status": 200,
+  "timed_out": false,
+  "elapsed_ms": 1258.8,
+  "content": "OK",
+  "finish_reason": "stop",
+  "tool_calls": null,
+  "usage": {
+    "prompt_tokens": 202,
+    "cached_tokens": 193,
+    "completion_tokens": 14,
+    "reasoning_tokens": 10,
+    "total_tokens": 216
+  },
+  "response_id": "resp_073e57655d55ba272a1274069e5d45f8",
+  "response_headers": {
+    "content-type": "application/json; charset=utf-8",
+    "x-request-id": "b2cbdf22-0da4-44b1-9ac9-0c5574528672",
+    "server": "cloudflare",
+    "date": "Sat, 07 Nov 2026 13:15:18 GMT",
+    "cf-ray": "a56c9b166f6d48e5-NRT",
+    "via": "1.1 google"
+  },
+  "error": null,
+  "request": {
+    "model": "minimax-m3",
+    "max_tokens": 64,
+    "messages": [
+      {
+        "role": "user",
+        "content": "Reply exactly OK."
+      }
+    ],
+    "stream": false
+  },
+  "raw_response": "{\"id\":\"resp_073e57655d55ba272a1274069e5d45f8\",\"object\":\"chat.completion\",\"created\":1794057317,\"model\":\"minimax-m3\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"OK\",\"reasoning_content\":\"We need answer exactly OK. Need no extra.\"},\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":202,\"completion_tokens\":14,\"total_tokens\":216,\"prompt_tokens_details\":{\"cached_tokens\":193},\"completion_tokens_details\":{\"reasoning_tokens\":10}},\"service_tier\":\"auto\"}"
+}

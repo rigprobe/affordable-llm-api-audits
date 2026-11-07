@@ -1,0 +1,28 @@
+{
+  "task": "deeprelay_measured",
+  "run_dir": "opencode\\deeprelay-measured-20261108-012923",
+  "per_model": {
+    "deepseek-v4.1-flash": {
+      "pass": "9/9",
+      "median_s": 40.77,
+      "p95_s": 51.8,
+      "weighted_in_median": 87326.0,
+      "weighted_in_source": "billing delta per run",
+      "raw_in_median": 14665.0,
+      "per_task_weighted_in": 91242.4,
+      "factor": 1.0
+    },
+    "glm-5.3-flash": {
+      "pass": "9/9",
+      "median_s": 61.04,
+      "p95_s": 150.95,
+      "weighted_in_median": 139689.0,
+      "weighted_in_source": "billing delta per run",
+      "raw_in_median": 14849.0,
+      "per_task_weighted_in": 141569.6,
+      "factor": 1.75
+    }
+  },
+  "unverified": [],
+  "notes": "18 runs (3 tasks x 3 repeats x 2 models). Billing delta over the batch: weighted_input=2095308, weighted_output=89562, cost_micro_cents=7289306, PAYG calls=False. Theory assumes 4,000 input / 1,000 output per task. OpenCode token counters are best-effort; billing counters are authoritative. Weighted input is measured as the billing subscription delta; it equals (OpenCode input + cache_read) x plan factor, so cached prompt tokens are counted at full weight. The 4,000-token theory understates one real task by roughly the reported theory_gap_factor."
+}
