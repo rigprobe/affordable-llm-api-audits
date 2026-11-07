@@ -1,6 +1,6 @@
-# cheap-llm-api-audits
+# affordable-llm-api-audits
 
-格安・無料系クラウドLLM API 5社を、実際に契約して叩いた記録と、図表を生成したスクリプトです。
+低価格・無料枠のあるクラウドLLM API 5社を、実際に契約して叩いた記録と、図表を生成したスクリプトです。
 
 記事: Zenn「月$0.99でコーディングエージェントを回す — 格安クラウドLLM 5社を実測した」
 (https://zenn.dev/rigprobe/articles/9dedab8c9101f8)
@@ -27,7 +27,10 @@ APIキー、Cookie、メールアドレス、アカウントID、ローカルパ
 | DeepRelay 課金 | 18ランでPAYG $0、plan_covered 8/8（11/04の8推論で+15,791加重トークン） |
 | Harogo | 19モデル中 FULL_PASS 10、UNAVAILABLE 8、NOT_ACCESSIBLE 1 |
 | AIHubMix | 11/04の70件中32件が退役一覧。11/08の再確認23/23はHTTP 200 |
+| Rayu Nemotron 3 Ultra | 4リクエストすべて200、消費0 credits |
 | Rayu Usage | トップライン46.18とSource Split 45.344の差0.836（別カウンタの並置） |
+
+DeepSeek系は、DeepRelayのV4.1 Flashが18ラン中9/9合格（中央値40.77秒）で、加重入力も18ラン中でもっとも小さい。Rayuでも `deepseek-v4.1-flash-1017` は200で正常だった。止まっていたのはRayuのV4 ProとV4 Flash（旧世代）で、同じカタログ内の現行V4.1 Flashは動いている。モデル単位の上流経路の問題として切り分けられている。
 
 ## 図の再生成
 
