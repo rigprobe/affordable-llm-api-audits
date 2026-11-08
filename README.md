@@ -2,8 +2,7 @@
 
 低価格・無料枠のあるクラウドLLM API 5社を、実際に契約して叩いた記録と、図表を生成したスクリプトです。
 
-記事: Zenn「月$0.99でコーディングエージェントを回す — 格安クラウドLLM 5社を実測した」
-(https://zenn.dev/rigprobe/articles/9dedab8c9101f8)
+記事: [月$0.99でコーディングエージェントを回す — 低価格クラウドLLM 5社を実測した](https://zenn.dev/rigprobe/articles/9dedab8c9101f8)
 
 対象: BlazeRail / Harogo / DeepRelay / AIHubMix / Rayu Code。試験日は2026年11月2日〜8日。
 
